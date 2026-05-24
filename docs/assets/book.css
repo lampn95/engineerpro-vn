@@ -123,6 +123,45 @@
   text-align: center;
 }
 
+/* Feedback callout — đóng góp ý kiến cho cuốn sách */
+.feedback-callout {
+  margin-top: 1.5rem;
+  padding: 1.25rem 1.5rem;
+  background: rgba(255, 165, 0, 0.06);
+  border: 1px dashed rgba(255, 140, 0, 0.4);
+  border-radius: 8px;
+  text-align: center;
+}
+
+.feedback-callout h4 {
+  margin: 0 0 0.7rem 0;
+  font-size: 1.1rem;
+  color: #b25f00;
+}
+
+.feedback-callout p {
+  margin: 0 0 0.9rem 0;
+  line-height: 1.65;
+  text-align: left;
+}
+
+.feedback-btn {
+  display: inline-block;
+  padding: 0.55rem 1.3rem;
+  background: #ff8c00;
+  color: #fff !important;
+  border-radius: 8px;
+  text-decoration: none !important;
+  font-weight: 600;
+  font-size: 0.95rem;
+  transition: background 0.15s ease, transform 0.15s ease;
+}
+
+.feedback-btn:hover {
+  background: #e57c00;
+  transform: translateY(-1px);
+}
+
 /* EngineerPro logo card */
 .engineerpro-card {
   text-align: center;
@@ -383,19 +422,63 @@
 /* Project goal block — đặt ở đầu abstract, trước EngineerPro card. */
 .project-goal {
   margin-bottom: 1.8rem;
-  padding: 1rem 1.25rem;
+  padding: 1.25rem 1.5rem;
   border-left: 4px solid #1f9d55;
   background: rgba(31, 157, 85, 0.05);
   border-radius: 6px;
 }
 
-.project-goal p {
-  margin: 0 0 0.6rem 0;
-  line-height: 1.6;
+.project-goal > p {
+  margin: 0 0 0.7rem 0;
+  line-height: 1.65;
 }
 
-.project-goal p:last-child {
-  margin-bottom: 0;
+/* Course callout — cuốn sách + khoá học EngineerPro */
+.course-callout {
+  margin-top: 1.2rem;
+  padding: 1.1rem 1.25rem;
+  background: #fff;
+  border: 1px solid rgba(31, 157, 85, 0.25);
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+.course-callout p {
+  margin: 0 0 1rem 0;
+  line-height: 1.65;
+  font-size: 0.98rem;
+}
+
+.course-cta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  justify-content: flex-start;
+}
+
+.course-btn {
+  display: inline-block;
+  padding: 0.55rem 1.2rem;
+  border-radius: 8px;
+  text-decoration: none !important;
+  font-weight: 600;
+  font-size: 0.95rem;
+  transition: background 0.15s ease, transform 0.15s ease;
+  background: #1f9d55;
+  color: #fff !important;
+}
+
+.course-btn:hover {
+  background: #178246;
+  transform: translateY(-1px);
+}
+
+.course-btn-secondary {
+  background: #1877f2;
+}
+
+.course-btn-secondary:hover {
+  background: #145dbf;
 }
 
 /* On narrow screens, stack photo above text */
