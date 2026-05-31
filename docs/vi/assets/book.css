@@ -656,6 +656,14 @@ html[lang="en"] .author:first-of-type::before {
   background: linear-gradient(135deg, #1f9d55 0%, #0b7a3a 100%);
 }
 
+.floating-cta-messenger {
+  background: linear-gradient(135deg, #f77737 0%, #e1306c 55%, #c13584 100%);
+}
+
+.floating-cta-zalo {
+  background: linear-gradient(135deg, #0068ff 0%, #004ecb 100%);
+}
+
 .floating-cta-icon {
   flex-shrink: 0;
   width: 2rem;
@@ -666,6 +674,18 @@ html[lang="en"] .author:first-of-type::before {
   background: rgba(255, 255, 255, 0.22);
   border-radius: 50%;
   font-size: 1rem;
+}
+
+.floating-cta-icon-zalo {
+  background: #fff;
+  color: #0068ff;
+  font-weight: 800;
+  font-size: 0.95rem;
+  font-family: Arial, sans-serif;
+}
+
+.floating-cta-icon-messenger {
+  background: rgba(255, 255, 255, 0.25);
 }
 
 @media (max-width: 600px) {
@@ -904,7 +924,9 @@ code {
     background-color: transparent;
   }
 
-  .floating-cta-courses {
+  .floating-cta-courses,
+  .floating-cta-messenger,
+  .floating-cta-zalo {
     box-shadow: 0 4px 18px rgba(0, 0, 0, 0.45);
   }
 }
